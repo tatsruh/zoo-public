@@ -53,9 +53,7 @@ const StyledInput = styled.input`
 const StyledH2 = styled.h2`
     font-size: 1.5rem;
     font-weight: 200;
-    margin: 0;
     letter-spacing: 1px;
     margin-bottom: 10px;
-}
 `
 export default SubscribeForm;

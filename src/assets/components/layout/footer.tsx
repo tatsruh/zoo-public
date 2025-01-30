@@ -6,9 +6,13 @@ import {MainButton} from "../buttons/MainButton.tsx";
 import SocialMedias from "../social-medias/SocialMedias.tsx";
 import SubscribeForm from "../subscribe/SubscribeForm.tsx";
 
-export const Footer = () => {
+type Props = {
+    id: string;
+}
+
+export const Footer = (props: Props) => {
     return (
-        <FooterWrapper>
+        <FooterWrapper id={`${props.id}`}>
             <StyledContainer>
                 <FlexContainer flexDirection="row" justifyContent="space-between" alignItems="center" width={"100%"}>
                     <FlexContainer flexDirection={"column"} justifyContent={"space-around"} alignItems={"center"}>

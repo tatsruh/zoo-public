@@ -1,10 +1,13 @@
 import {StyledContainer} from "../../styled/Container.tsx";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import styled from "styled-components";
+type Props = {
+    id: string;
+}
 
-export const Description = () => {
+export const Description = (props: Props) => {
     return (
-        <DescriptionContainerStyled>
+        <DescriptionContainerStyled id={`${props.id}`}>
             <StyledContainer>
                 <FlexContainer justifyContent="space-between" flexDirection="row" alignItems="center">
                     <img src="/src/assets/images/bamboo-cap.png" alt="bamboo-man"/>

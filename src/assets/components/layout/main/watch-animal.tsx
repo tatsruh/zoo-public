@@ -2,10 +2,12 @@ import {StyledContainer} from "../../styled/Container.tsx";
 import styled from "styled-components";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import {MainButton} from "../../buttons/MainButton.tsx";
-
-export const WatchAnimal = () => {
+type Props = {
+    id: string;
+}
+export const WatchAnimal = (props: Props) => {
     return (
-        <WatchAnimalContainer>
+        <WatchAnimalContainer id={`${props.id}`}>
             <StyledContainer>
                 <FlexContainer flexDirection="row"
                                alignItems="center"

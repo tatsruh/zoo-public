@@ -14,8 +14,10 @@ export type OpinionType = {
     content: string;
     svg: string;
 }
-
-const Opinions = () => {
+type Props = {
+    id: string;
+}
+const Opinions = (props: Props) => {
     const opinions: OpinionType[] = [
         {
             id: v1(),
@@ -144,7 +146,7 @@ const Opinions = () => {
     };
 
     return (
-        <OpinionContainer>
+        <OpinionContainer id={`${props.id}`}>
 
             <h3>Testimonials</h3>
             <FlexContainer flexDirection="row" justifyContent={"space-around"} alignItems="center">

@@ -3,10 +3,13 @@ import {StyledContainer} from "../../styled/Container.tsx";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import {MainButton} from "../../buttons/MainButton.tsx";
 import Carousel from "../../carousel/Carousel.tsx";
+type Props = {
+    id: string;
+}
+const FeedPage = (props: Props) => {
 
-const FeedPage = () => {
     return (
-        <FeedPageContainter>
+        <FeedPageContainter id={`${props.id}`}>
             <StyledContainer>
                 <FlexContainer flexDirection="column" alignItems="center" justifyContent="center">
                     <CarouselContainer>

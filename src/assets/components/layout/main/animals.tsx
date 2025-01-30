@@ -15,8 +15,11 @@ export type CardType = {
     icon: string;
 }
 type CardsType = Array<CardType>
+type Props = {
+    id: string;
+}
 
-export const Animals = () => {
+export const Animals = (props: Props) => {
     const cards: CardsType = [
         {
             id: v1(),
@@ -105,7 +108,7 @@ export const Animals = () => {
     };
 
     return (
-        <AnimalsContainer>
+        <AnimalsContainer id={`${props.id}`}>
             <div>
                 <FlexContainer flexDirection="row" justifyContent="space-around" alignItems="center">
                     <FlexContainer flexDirection="column" justifyContent="center" alignItems="end">
