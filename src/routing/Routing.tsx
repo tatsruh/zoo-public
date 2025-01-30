@@ -12,10 +12,10 @@ export const router = createBrowserRouter([
         element: <App/>,
         errorElement: <Error/>,
         children: [
-            {path: '/description', element: <Description/>},
-            {path: '/feed', element: <FeedPage/>},
-            {path: '/opinions', element: <Opinions/>},
-            {path: '/watchanimal', element: <WatchAnimal/>}
+            {path: '/description', element: <Description id={'desc'}/>},
+            {path: '/feed', element: <FeedPage id={'feed'}/>},
+            {path: '/opinions', element: <Opinions id={'opinions'}/>},
+            {path: '/watchanimal', element: <WatchAnimal id={'watch'}/>}
 
         ]
     }

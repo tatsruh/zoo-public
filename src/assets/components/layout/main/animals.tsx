@@ -84,7 +84,8 @@ export const Animals = (props: Props) => {
     const [state, setState] = useState<CardType[]>(cards.slice(0, 6));
     const [disabled1, setDisabled1] = useState<boolean>(true);
     const [disabled2, setDisabled2] = useState<boolean>(false);
-
+   console.log(startNumber)
+    console.log(sliceNumber)
     const rightButton = () => {
         const newStartNumber = 6;
         const newSliceNumber = 12;
