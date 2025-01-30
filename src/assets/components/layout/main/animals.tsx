@@ -25,58 +25,58 @@ export const Animals = (props: Props) => {
             id: v1(),
             title: "Giant Pandas",
             description: "Native to Southwest China",
-            image: "/src/assets/images/pandas.png",
-            icon: "/src/assets/images/banana-bamboo_icon.png"
+            image: "/public//pandas.png",
+            icon: "/public/banana-bamboo_icon.png"
         },
         {
-            id: v1(), title: "Eagles", description: "Native to South America", image: "/src/assets/images/eagle.png",
-            icon: "/src/assets/images/meet-fish_icon.png"
+            id: v1(), title: "Eagles", description: "Native to South America", image: "/public/eagle.png",
+            icon: "/public//meet-fish_icon.png"
         },
         {
-            id: v1(), title: "Gorillas", description: "Native to Congo", image: "/src/assets/images/gorilla.png",
-            icon: "/src/assets/images/banana-bamboo_icon.png"
+            id: v1(), title: "Gorillas", description: "Native to Congo", image: "/public/gorilla.png",
+            icon: "/public/banana-bamboo_icon.png"
         },
         {
             id: v1(),
             title: "Two-toed Sloth",
             description: "Mesoamerica, South America",
-            image: "/src/assets/images/leniwiec.png",
-            icon: "/src/assets/images/banana-bamboo_icon.png"
+            image: "/public/leniwiec.png",
+            icon: "/public/banana-bamboo_icon.png"
         },
         {
             id: v1(),
             title: "cheetahs",
             description: "Native to Southwest China",
-            image: "/src/assets/images/gepard.png",
-            icon: "/src/assets/images/meet-fish_icon.png"
+            image: "/public/gepard.png",
+            icon: "/public/meet-fish_icon.png"
         },
         {
-            id: v1(), title: "Penguins", description: "Native to Antarctica", image: "/src/assets/images/penguin.png",
-            icon: "/src/assets/images/meet-fish_icon.png"
+            id: v1(), title: "Penguins", description: "Native to Antarctica", image: "/public/penguin.png",
+            icon: "/public/meet-fish_icon.png"
         },
         {
-            id: v1(), title: "Lions", description: "Native to Africa", image: "/src/assets/images/lion.jpeg",
-            icon: "/src/assets/images/meet-fish_icon.png"
+            id: v1(), title: "Lions", description: "Native to Africa", image: "/public/lion.jpeg",
+            icon: "/public/meet-fish_icon.png"
         },
         {
-            id: v1(), title: "Elephants", description: "Native to Africa", image: "/src/assets/images/elephant.jpeg",
-            icon: "/src/assets/images/banana-bamboo_icon.png"
+            id: v1(), title: "Elephants", description: "Native to Africa", image: "/public/elephant.jpeg",
+            icon: "/public/banana-bamboo_icon.png"
         },
         {
-            id: v1(), title: "Tucan", description: "Native to Africa", image: "/src/assets/images/tucan.jpg",
-            icon: "/src/assets/images/meet-fish_icon.png"
+            id: v1(), title: "Tucan", description: "Native to Africa", image: "/public/tucan.jpg",
+            icon: "/public/meet-fish_icon.png"
         },
         {
-            id: v1(), title: "Monkey", description: "Native to Asia", image: "/src/assets/images/monkey.jpeg",
-            icon: "/src/assets/images/banana-bamboo_icon.png"
+            id: v1(), title: "Monkey", description: "Native to Asia", image: "/public/monkey.jpeg",
+            icon: "/public/banana-bamboo_icon.png"
         },
         {
-            id: v1(), title: "Gnu", description: "Native to Africa", image: "/src/assets/images/gnu.jpeg",
-            icon: "/src/assets/images/banana-bamboo_icon.png"
+            id: v1(), title: "Gnu", description: "Native to Africa", image: "/public/gnu.jpeg",
+            icon: "/public/banana-bamboo_icon.png"
         },
         {
-            id: v1(), title: "Giraffe", description: "Native to Africa", image: "/src/assets/images/giraffe.jpg",
-            icon: "/src/assets/images/banana-bamboo_icon.png"
+            id: v1(), title: "Giraffe", description: "Native to Africa", image: "/public/giraffe.jpg",
+            icon: "/public/banana-bamboo_icon.png"
         }
     ]
     const [startNumber, setStartNumber] = useState(0);

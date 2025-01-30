@@ -1,6 +1,7 @@
 import {StyledContainer} from "../../styled/Container.tsx";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import styled from "styled-components";
+import bambooCap from "/public/bamboo-cap.png?import";
 type Props = {
     id: string;
 }
@@ -10,7 +11,7 @@ export const Description = (props: Props) => {
         <DescriptionContainerStyled id={`${props.id}`}>
             <StyledContainer>
                 <FlexContainer justifyContent="space-between" flexDirection="row" alignItems="center">
-                    <img src="/src/assets/images/bamboo-cap.png" alt="bamboo-man"/>
+                    <img src={bambooCap} alt="bamboo-man"/>
                     <div style={{ maxHeight: 400, maxWidth: '40%'}}>
                     <FlexContainer justifyContent="space-between" flexDirection="column" alignItems="start">
                         <h2>The Backstage of the Wilderness World.</h2>

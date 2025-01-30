@@ -29,10 +29,11 @@ export const WatchAnimal = (props: Props) => {
 
 const WatchAnimalContainer = styled.div`
     height: 700px;
-    background-image: url("/src/assets/images/giantPanda.png");
+    background-image: url("/public/giantPanda.png");
     background-size: cover; /* Чтобы изображение растягивалось по контейнеру */
     background-position: center; /* Центрирование изображения */
     display: block;
+
     h1 {
         color: white;
         font-size: 80px;
