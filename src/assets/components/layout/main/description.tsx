@@ -1,7 +1,7 @@
 import {StyledContainer} from "../../styled/Container.tsx";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import styled from "styled-components";
-import bambooCap from "/public/bamboo-cap.png?import";
+import bambooCap from "/public/bamboo-cap.png";
 type Props = {
     id: string;
 }
