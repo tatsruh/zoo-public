@@ -2,6 +2,8 @@ import {StyledContainer} from "../../styled/Container.tsx";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import styled from "styled-components";
 import bambooCap from "/public/bamboo-cap.png";
+import {media} from "../../../../styles/breakpoints.ts";
+import styles from '../../../../styles/mainModule.module.css'
 type Props = {
     id: string;
 }
@@ -11,7 +13,7 @@ export const Description = (props: Props) => {
         <DescriptionContainerStyled id={`${props.id}`}>
             <StyledContainer>
                 <FlexContainer justifyContent="space-between" flexDirection="row" alignItems="center">
-                    <img src={bambooCap} alt="bamboo-man"/>
+                    <ImgStyled src={bambooCap} alt="bamboo-man" className={styles.disappear}/>
                     <div style={{ maxHeight: 400, maxWidth: '40%'}}>
                     <FlexContainer justifyContent="space-between" flexDirection="column" alignItems="start">
                         <h2>The Backstage of the Wilderness World.</h2>
@@ -47,5 +49,18 @@ const DescriptionContainerStyled = styled.div`
     h2 {
         font-size: 2.5rem;
     }
+        @media ${media.mobile} {
+            margin-left: 10px;
+            justify-content: start;
+            height: 1200px;
+            margin-top: -300px;
+        }
+`
 
+const ImgStyled = styled.img`
+    @media ${media.mobile} {
+        width: 300px;
+        height: 200px;
+    }
+    
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {media} from "../../../styles/breakpoints.ts";
 
 type ButtonProps = {
     width: string;
@@ -27,6 +28,9 @@ const StyledButton = styled.button<StyledButtonProps>`
     height: 54px;
     border-radius: 25px;
     text-transform: uppercase;
-
+    @media ${media.mobile} {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 
 `

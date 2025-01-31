@@ -28,5 +28,10 @@ const BarContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 30px
+    gap: 30px;
+    @media (max-width: 768px) {
+    flex-direction: column;
+        margin-top: 30px;
+}
+    
 `

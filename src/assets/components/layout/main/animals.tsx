@@ -127,20 +127,20 @@ export const Animals = (props: Props) => {
     return (
         <AnimalsContainer id={`${props.id}`}>
             <div>
-                <FlexContainer flexDirection="row" justifyContent="space-around" alignItems="center">
-                    <FlexContainer flexDirection="column" justifyContent="center" alignItems="end">
+                <TestContainer>
+                    <ButtonContainer>
                     <MainButton disabled={disabled1} text="<" onClick={leftButton} width="54px"></MainButton>
-                    </FlexContainer>
+                    </ButtonContainer>
 
                     <FlexContainer width="1280px" flexDirection="column" justifyContent="start" alignItems="start" >
                         <StyledContainer>
                         <Cards cards={state}></Cards>
                         </StyledContainer>
                     </FlexContainer>
-                    <FlexContainer flexDirection="column" justifyContent="center" alignItems="start">
+                    <ButtonContainer>
                         <MainButton disabled={disabled2} text=">" onClick={rightButton} width="54px"></MainButton>
-                    </FlexContainer>
-                </FlexContainer>
+                    </ButtonContainer>
+                </TestContainer>
             </div>
             <FlexContainer flexDirection="row" justifyContent="center" alignItems="center" >
                 <MainButton text="choose your favorite" onClick={()=> {}} width="300px"></MainButton>
@@ -157,4 +157,28 @@ const AnimalsContainer = styled.div`
         margin-top: 30px;
 }
     
+`
+const TestContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (max-width: 768px) {  // Ensure correct media query syntax
+    flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+}
+`
+
+const ButtonContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    @media screen and (max-width: 768px) {
+        // Ensure correct media query syntax
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 `

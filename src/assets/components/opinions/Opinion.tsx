@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {FlexContainer} from "../styled/FlexContainer.tsx";
 import {OpinionType} from "../layout/main/opinions.tsx";
+import {media} from "../../../styles/breakpoints.ts";
 
 export const Opinion = (props: OpinionType) => {
     return (
@@ -30,6 +31,10 @@ const OpinionContainer = styled.div`
     border-radius: 15px;
     padding: 20px 0;
     margin-bottom: 20px;
+    @media ${media.mobile} {
+        width: 300px;
+        height: 100%
+    }
 
     span {
        margin-right: 10px;

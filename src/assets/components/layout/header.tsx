@@ -3,6 +3,7 @@ import {StyledContainer} from "../styled/Container.tsx";
 import Logo from "../logo.tsx";
 import Menu from "../menu/Menu.tsx";
 import {FlexContainer} from "../styled/FlexContainer.tsx";
+import styles from '../../../styles/mainModule.module.css'
 
 export const Header = () => {
     return (
@@ -12,7 +13,7 @@ export const Header = () => {
                     <FlexContainer flexDirection="row" justifyContent="space-between" alignItems="center" >
                     <Logo></Logo>
                     <Menu></Menu>
-                        <StyledSpan>Designed by ©</StyledSpan>
+                        <StyledSpan className={styles.disappear}>Designed by ©</StyledSpan>
 
                     </FlexContainer>
                 </FlexContainer>

@@ -4,7 +4,6 @@ import {MainButton} from "../../buttons/MainButton.tsx";
 import {OpinionBar} from "../../opinions/Opinionbar.tsx";
 import {v1} from "uuid";
 import {useEffect, useState} from "react";
-import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import {ProgressBar} from "../../opinions/ProgressBar.tsx";
 import img1 from '/public/kjki.svg';
 import img2 from '/public/ojo.svg';
@@ -156,11 +155,11 @@ const Opinions = (props: Props) => {
         <OpinionContainer id={`${props.id}`}>
 
             <h3>Testimonials</h3>
-            <FlexContainer flexDirection="row" justifyContent={"space-around"} alignItems="center">
+            <OpinionSmallContainer>
                 <MainButton text="<" onClick={leftButton} width="54px" disabled={disabled1}></MainButton>
                 <OpinionBar opinions={state}></OpinionBar>
                 <MainButton text=">" onClick={rightButton} width="54px" disabled={disabled2}></MainButton>
-            </FlexContainer>
+            </OpinionSmallContainer>
 
             <StyledContainer>
                 <ProgressBar width={width}></ProgressBar>
@@ -191,4 +190,14 @@ const OpinionContainer = styled.div`
         margin-top: 10px;
     }
 `
+const OpinionSmallContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+`;
 export default Opinions;

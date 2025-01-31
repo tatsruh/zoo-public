@@ -1,4 +1,4 @@
-import instaPic from '../../../assets/socialmedias/instagram.png'
+import instaPic from '/public/instagram.png'
 import twitterPic from '/public/twitter.png'
 import facebookPic from '/public/facebook.png'
 import youtubePic from '/public/youtube.png'

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import styles from '../../../styles/mainModule.module.css'
 
 type ProgressBarProps = {
     width: number;
@@ -6,7 +7,7 @@ type ProgressBarProps = {
 
 export const ProgressBar = (props: ProgressBarProps) => {
     return (
-        <ProgressBarContainer>
+        <ProgressBarContainer className={styles.disappear}>
             <ProgressBarStyled width={props.width}>
         </ProgressBarStyled>
         </ProgressBarContainer>

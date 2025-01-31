@@ -3,6 +3,8 @@ import {StyledContainer} from "../../styled/Container.tsx";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import {MainButton} from "../../buttons/MainButton.tsx";
 import Carousel from "../../carousel/Carousel.tsx";
+import {media} from "../../../../styles/breakpoints.ts";
+import styles from "../../../../styles/mainModule.module.css";
 type Props = {
     id: string;
 }
@@ -23,7 +25,7 @@ const FeedPage = (props: Props) => {
                                 these
                                 problems. Please consider a gift to our Emergency Support Fund . </p></div>
 
-                        <h3>How it works</h3>
+                        <h3 className={styles.disappear}>How it works</h3>
 
                         <Carousel></Carousel>
 
@@ -45,6 +47,11 @@ const FeedPageContainter = styled.div`
     display: block;
     background-color: rgba(254, 189, 171, 1);
     background-image: linear-gradient(334deg, rgba(254, 189, 171, 1) 0%, rgba(51, 59, 65, 0) 50%, rgba(254, 210, 144, 1) 100%);
+    @media ${media.mobile} {
+        max-width: 550px;
+        width: 100%
+        
+    }
 
 
 
@@ -59,6 +66,10 @@ const CarouselContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media ${media.mobile} {
+        max-width: 550px;
+        padding: 20px;
+    }
 
 
     h2, h3 {
@@ -67,6 +78,9 @@ const CarouselContainer = styled.div`
         font-size: 2rem;
         text-align: center;
         margin: 0;
+        @media ${media.mobile} {
+            max-width: 300px;
+        }
     }
 
     h2 {
@@ -79,10 +93,16 @@ const CarouselContainer = styled.div`
         color: #333B41;
         font-weight: 200;
         font-size: 1.5rem;
+        @media ${media.mobile} {
+            max-width: 300px;
+        }
     }
 
     p {
         font-weight: bold;
+        @media ${media.mobile} {
+            max-width: 300px;
+        }
     }
 
     p + p {

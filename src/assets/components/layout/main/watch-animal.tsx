@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import {MainButton} from "../../buttons/MainButton.tsx";
 import background from "/public/giantPanda.png"
+import styles from '../../../../styles/mainModule.module.css'
 type Props = {
     id: string;
 }
@@ -13,7 +14,7 @@ export const WatchAnimal = (props: Props) => {
                 <FlexContainer flexDirection="row"
                                alignItems="center"
                                justifyContent="space-between" >
-                <div></div>
+                <div className={styles.disappear}></div>
                 <FlexContainer flexDirection="column"
                                alignItems="center"
                                justifyContent="center"

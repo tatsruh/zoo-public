@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {media} from "../../../styles/breakpoints.ts";
 type FlexContainerProps = {
     flexDirection: string
     alignItems: string
@@ -15,6 +16,10 @@ export const FlexContainer = styled.div<FlexContainerProps>`
     align-items: ${props => props.alignItems};
     justify-content: ${props => props.justifyContent};
     flex-wrap: wrap;
-    margin: 0
+    margin: 0;
+    @media ${media.mobile} {
+    max-width: 550px;
+        width: 100%;
+    }
     
 `;

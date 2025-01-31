@@ -5,6 +5,7 @@ import {FlexContainer} from "../styled/FlexContainer.tsx";
 import {MainButton} from "../buttons/MainButton.tsx";
 import SocialMedias from "../social-medias/SocialMedias.tsx";
 import SubscribeForm from "../subscribe/SubscribeForm.tsx";
+import {media} from "../../../styles/breakpoints.ts";
 
 type Props = {
     id: string;
@@ -36,4 +37,8 @@ const FooterWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @media ${media.mobile} {
+        height: 100%;
+    }
+  
 `
