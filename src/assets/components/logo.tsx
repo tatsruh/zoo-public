@@ -1,12 +1,10 @@
 import styled from "styled-components";
+import img from '/public/PetStoryonline.svg'
 
 const Logo = () => {
     return (
 
-            <StyledLogoSVG src={'./src/assets/svg-elements/PetStory online.svg'}>
-
-            </StyledLogoSVG>
-
+            <StyledLogoSVG src={img} alt="Logo" />
     );
 };
 

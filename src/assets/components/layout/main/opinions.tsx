@@ -6,6 +6,13 @@ import {v1} from "uuid";
 import {useEffect, useState} from "react";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import {ProgressBar} from "../../opinions/ProgressBar.tsx";
+import img1 from '/public/kjki.svg';
+import img2 from '/public/ojo.svg';
+import img3 from '/public/user_icon.svg';
+import img4 from '/public/efe.svg'
+
+
+
 
 export type OpinionType = {
     id: string;
@@ -23,84 +30,84 @@ const Opinions = (props: Props) => {
             id: v1(),
             name: "Alice",
             location: "Spain",
-            svg: "kjki",
+            svg: img1,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Michael",
             location: "Austria",
-            svg: "ojo",
+            svg: img3,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Michael John",
             location: "Russia",
-            svg: "user_icon",
+            svg: img4,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Krzysztof",
             location: "Germany",
-            svg: "user_icon",
+            svg: img2,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Michael John",
             location: "Austria",
-            svg: "efe",
+            svg: img4,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Julia",
             location: "USA",
-            svg: "user_icon",
+            svg: img1,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Sebastian",
             location: "USA",
-            svg: "efe",
+            svg: img3,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Kevin",
             location: "Russia",
-            svg: "ojo",
+            svg: img2,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Krzysztof",
             location: "Germany",
-            svg: "user_icon",
+            svg: img4,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Michael John",
             location: "Austria",
-            svg: "efe",
+            svg: img2,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Julia",
             location: "USA",
-            svg: "user_icon",
+            svg: img3,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         },
         {
             id: v1(),
             name: "Sebastian",
             location: "USA",
-            svg: "efe",
+            svg: img4,
             content: "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals."
         }
     ]

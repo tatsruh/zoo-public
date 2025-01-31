@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 type ItemProps = {
     src: string;
 }
@@ -7,7 +8,7 @@ type ItemProps = {
 const CarouselItem = (props: ItemProps) => {
     return (
         <ItemContainer>
-            <img src={`./src/assets/svg-elements/${props.src}.svg`} alt="item"/>
+            <img src={props.src} alt="item"/>
         </ItemContainer>
     );
 };

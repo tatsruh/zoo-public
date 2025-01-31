@@ -1,16 +1,20 @@
 import CarouselItem from "./Carousel-Item.tsx";
 import styled from "styled-components";
+import arrow from '/public/Vector.svg'
+import pay from '/public/pay.svg'
+import zoo from '/public/zoo.svg'
+import monkey from '/public/monkey.svg'
 
 const Carousel = () => {
     return (
 
         <CarouselContainer>
-            <CarouselItem src={'pay'}></CarouselItem>
-            <img src={'./src/assets/svg-elements/Vector.svg'} alt="arrow"/>
-            <CarouselItem src={'zoo'}></CarouselItem>
-            <img src={'./src/assets/svg-elements/Vector.svg'} alt="arrow"/>
+            <CarouselItem src={pay}></CarouselItem>
+            <img src={arrow} alt="arrow"/>
+            <CarouselItem src={zoo}></CarouselItem>
+            <img src={arrow} alt="arrow"/>
 
-            <CarouselItem src='monkey'></CarouselItem>
+            <CarouselItem src={monkey}></CarouselItem>
 
         </CarouselContainer>
 

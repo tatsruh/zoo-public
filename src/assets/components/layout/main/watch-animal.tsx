@@ -2,6 +2,7 @@ import {StyledContainer} from "../../styled/Container.tsx";
 import styled from "styled-components";
 import {FlexContainer} from "../../styled/FlexContainer.tsx";
 import {MainButton} from "../../buttons/MainButton.tsx";
+import background from "/public/giantPanda.png"
 type Props = {
     id: string;
 }
@@ -29,7 +30,7 @@ export const WatchAnimal = (props: Props) => {
 
 const WatchAnimalContainer = styled.div`
     height: 700px;
-    background-image: url("/public/giantPanda.png");
+    background-image: url(${background});
     background-size: cover; /* Чтобы изображение растягивалось по контейнеру */
     background-position: center; /* Центрирование изображения */
     display: block;

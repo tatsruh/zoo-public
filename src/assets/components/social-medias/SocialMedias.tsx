@@ -1,7 +1,7 @@
 import instaPic from '../../../assets/socialmedias/instagram.png'
-import twitterPic from '../../../assets/socialmedias/twitter.png'
-import facebookPic from '../../../assets/socialmedias/facebook.png'
-import youtubePic from '../../../assets/socialmedias/youtube.png'
+import twitterPic from '/public/twitter.png'
+import facebookPic from '/public/facebook.png'
+import youtubePic from '/public/youtube.png'
 import Media from "./Media.tsx";
 
 const SocialMedias = () => {
