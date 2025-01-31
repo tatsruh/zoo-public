@@ -7,7 +7,7 @@ export const Opinion = (props: OpinionType) => {
         <OpinionContainer>
             <FlexContainer flexDirection={"column"} justifyContent={"center"} alignItems={"start"}>
                 <FlexContainer flexDirection={"row"} justifyContent={"space-around"} alignItems={"center"}>
-                    <img src={`/src/assets/svg-elements/${props.svg}.svg`} alt="avatar"/>
+                    <img src={props.svg} alt="avatar"/>
                     <div>
                         <div> <NameStyled>{props.name}</NameStyled> </div>
 
